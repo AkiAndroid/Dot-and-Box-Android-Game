@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_threeplayerentry"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="com.example.dell.civilwar.threeplayerentry">
+
+    <include layout="@layout/backgroundvideo2" />
+
+    <ImageButton
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/beginwarbutton"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/beginwar3" />
+
+    <EditText
+        android:layout_width="30dp"
+        android:maxLength="1"
+        android:digits="123456"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/col3"
+        android:layout_alignTop="@+id/row3"
+        android:layout_toRightOf="@+id/beginwar3"
+        android:layout_toEndOf="@+id/beginwar3"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:hint="C" />
+
+    <ImageButton
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/menubutton"
+        android:id="@+id/backmenu1"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/col3"
+        android:layout_alignStart="@+id/col3" />
+
+    <EditText
+        android:layout_width="30dp"
+        android:maxLength="1"
+        android:digits="12345"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginBottom="46dp"
+        android:id="@+id/row3"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:layout_above="@+id/beginwar3"
+        android:layout_toLeftOf="@+id/beginwar3"
+        android:layout_toStartOf="@+id/beginwar3"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"
+        android:hint="R" />
+
+    <TextView
+        android:text="Max 5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/row3"
+        android:layout_toLeftOf="@+id/beginwar3"
+        android:layout_toStartOf="@+id/beginwar3"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/textView3" />
+
+    <TextView
+        android:text="Max 6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignRight="@+id/col3"
+        android:layout_alignEnd="@+id/col3" />
+
+</RelativeLayout>

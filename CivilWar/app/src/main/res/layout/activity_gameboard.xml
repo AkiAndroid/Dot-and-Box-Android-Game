@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_gameboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="com.example.dell.civilwar.gameboard">
+
+    <include layout="@layout/backgroundvideo3" />
+
+
+    <com.example.dell.civilwar.boardcanvas
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/canvasboard"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ironmanpart2"
+        android:id="@+id/ironmanpart2"
+        android:layout_alignTop="@+id/ironmanpic1"
+        android:layout_toRightOf="@+id/ironmanpic1"
+        android:layout_toEndOf="@+id/ironmanpic1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ironmanpart1"
+        android:id="@+id/ironmanpic1"
+        android:layout_marginBottom="40dp"
+        android:layout_alignBottom="@+id/captainpart1"
+        android:layout_alignLeft="@+id/imageView6"
+        android:layout_alignStart="@+id/imageView6"
+        android:layout_marginLeft="51dp"
+        android:layout_marginStart="51dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ironmanscore"
+        android:textSize="24sp"
+        android:layout_alignBottom="@+id/imageView6"
+        android:layout_toRightOf="@+id/imageView6"
+        android:layout_toEndOf="@+id/imageView6"
+        android:layout_marginBottom="16dp"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/cptainscoreimage"
+        android:id="@+id/imageView7"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/captainscore"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/ironmanscore"
+        android:layout_alignBottom="@+id/ironmanscore"
+        android:layout_toLeftOf="@+id/imageView7"
+        android:layout_toStartOf="@+id/imageView7"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ironmanscoreimage"
+        android:id="@+id/imageView6"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/menubutton"
+        android:id="@+id/backtomenubutton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/captainpart1"
+        android:layout_alignStart="@+id/captainpart1"
+        android:layout_marginBottom="12dp" />
+
+    <ImageButton
+
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/restartbutton"
+        android:id="@+id/restartbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/matchdrawpic"
+        android:id="@+id/drawgameimage"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/captainpart1"
+        android:id="@+id/captainpart1"
+        android:layout_alignTop="@+id/drawgameimage"
+        android:layout_alignLeft="@+id/ironmanpic1"
+        android:layout_alignStart="@+id/ironmanpic1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/captainpart2"
+        android:id="@+id/captainpart2"
+        android:layout_alignTop="@+id/drawgameimage"
+        android:layout_toRightOf="@+id/ironmanpic1"
+        android:layout_toEndOf="@+id/ironmanpic1" />
+
+
+</RelativeLayout>

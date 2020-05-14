@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_singleplayerentry"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="com.example.dell.civilwar.singleplayerentry">
+
+    <include layout="@layout/singleplayerback" />
+
+    <ImageButton
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/menubutton"
+        android:id="@+id/backmenu3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/puristbutton"
+        android:id="@+id/puristbutton"
+        android:layout_marginRight="34dp"
+        android:layout_marginEnd="34dp"
+        android:layout_alignTop="@+id/easybutton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="30dp"
+        android:maxLength="1"
+        android:digits="123456"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/colentry"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:hint="C"
+        android:layout_marginTop="87dp"
+        android:layout_below="@+id/backmenu3"
+        android:layout_alignLeft="@+id/puristbutton"
+        android:layout_alignStart="@+id/puristbutton" />
+
+    <ImageButton
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/easybutton"
+        android:id="@+id/easybutton"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/rowentry"
+        android:layout_toStartOf="@+id/rowentry" />
+
+    <EditText
+
+        android:layout_width="30dp"
+        android:maxLength="1"
+        android:digits="12345"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/rowentry"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:hint="R"
+        android:layout_alignBaseline="@+id/colentry"
+        android:layout_alignBottom="@+id/colentry"
+        android:layout_toLeftOf="@+id/puristbutton"
+        android:layout_toStartOf="@+id/puristbutton"
+        android:layout_marginRight="44dp"
+        android:layout_marginEnd="44dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_threeplayerboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="com.example.dell.civilwar.threeplayerboard">
+
+    <include layout="@layout/backgroundvideo3"/>
+
+    <com.example.dell.civilwar.threeplayercanvas
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ironmanscoreimage"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView8" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/buckyscoreimage"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView9" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/cptainscoreimage"
+        android:id="@+id/imageView10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imageView9"
+        android:layout_alignEnd="@+id/imageView9"
+        android:id="@+id/buckyscore"
+        android:layout_below="@+id/imageView9"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView10"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/captainscore"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ironmanscore"
+        android:layout_below="@+id/imageView8"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_green_light" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/matchdrawpic"
+        android:id="@+id/drawimage1"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/buckywonimage"
+        android:id="@+id/buckywinimage"
+        android:layout_alignTop="@+id/drawimage1"
+        android:layout_toRightOf="@+id/buckyscore"
+        android:layout_toEndOf="@+id/buckyscore"
+        android:layout_marginTop="23dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ironmanpart2"
+        android:id="@+id/ironmanpic2"
+        android:layout_alignTop="@+id/drawimage1"
+        android:layout_toRightOf="@+id/ironmanpic1"
+        android:layout_toEndOf="@+id/ironmanpic1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ironmanpart1"
+        android:id="@+id/ironmanpic1"
+        android:layout_alignTop="@+id/drawimage1"
+        android:layout_toLeftOf="@+id/ironmanscore"
+        android:layout_toStartOf="@+id/ironmanscore" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/captainpart1"
+        android:id="@+id/captainpic1"
+        android:layout_alignTop="@+id/buckywinimage"
+        android:layout_alignLeft="@+id/drawimage1"
+        android:layout_alignStart="@+id/drawimage1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/captainpart2"
+        android:id="@+id/captainpic2"
+        android:layout_alignTop="@+id/buckywinimage"
+        android:layout_toRightOf="@+id/captainpic1"
+        android:layout_toEndOf="@+id/captainpic1" />
+
+    <ImageButton
+
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/menubutton"
+        android:id="@+id/menubutton1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/restartbutton"
+        android:layout_alignTop="@+id/menubutton1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/restartbutton1" />
+
+
+</RelativeLayout>
